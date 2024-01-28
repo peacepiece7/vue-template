@@ -1,6 +1,7 @@
 <template>
   <h2 @click="$emit('click')">
     {{ msg }}
+    {{ foo && foo }}
   </h2>
   <img
     src="~assets/logo.png"
@@ -14,6 +15,10 @@ export default {
       type: String,
       default: '',
     },
+    foo : {
+      type : String || undefined,
+      default : undefined
+    }
   },
   emits: ['click'],
 }

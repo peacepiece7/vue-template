@@ -3,15 +3,20 @@
   <HelloWorld 
     :msg="message" 
     @click="handler" />
-  <HelloWorld msg="Good" />
+  <HelloWorld
+    :msg="foo"
+    @click="handler" />
+  <Test />
 </template>
 
 <script>
 import HelloWorld from '~/components/HelloWorld'
+import Test from './components/Test'
 
 export default {
   components: {
-    HelloWorld
+    HelloWorld,
+    Test
   },
   data() {
     return {
@@ -21,6 +26,7 @@ export default {
   methods: {
     handler() {
       console.log(this.message)
+      this.foo = 'foo'
       this.message += '!'
     }
   }

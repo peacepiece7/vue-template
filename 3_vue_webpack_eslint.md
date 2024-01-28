@@ -54,3 +54,19 @@ module.exports = {
   },
 }
 ```
+
+## Reactive, Directive
+
+### reactive
+
+data 안에 있는 값이 변경되면 화면이 자동으로 갱신되는 것을 reactive라고 한다.
+
+### directive
+
+v-로 시작하는 것들을 directive라고 한다.
+
+# Error
+
+https://velog.io/@onehousesilver/vue%EC%97%90%EC%84%9C-export-createElementBlock-%EB%9C%B0%EB%95%8C
+
+## LifeCycle
