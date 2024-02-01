@@ -1,0 +1,25 @@
+{
+  "Vue Template": {
+    "prefix": "vt",
+    "body": "<template>\n<div>$TM_FILENAME_BASE</div></template>\n\n<script>\nexport default {}\n</script>\n\n<style scoped>\n</style>",
+    "scope": "vue"
+  },
+  "reactFunction": {
+    "prefix": "rfc",
+    "body": "import React from 'react';\n\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\n",
+    "description": "Creates a React Function component",
+    "scope": "javascriptreact, typescriptreact"
+  },
+  "Import Module CSS": {
+    "prefix": "si",
+    "body": ["import styles from './$TM_FILENAME_BASE.module.css'"],
+    "description": "Import PostCSS",
+    "scope": "javascriptreact, typescriptreact"
+  },
+  "ClassName": {
+    "prefix": "cn",
+    "body": ["className={styles.$0}"],
+    "description": "Adding className",
+    "scope": "javascriptreact, typescriptreact"
+  }
+}

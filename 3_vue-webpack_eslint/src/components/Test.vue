@@ -12,11 +12,13 @@
       :key="fruit"
       :fruitName="fruit" />
   </ul>
+  <Animals />
 </template>
 
 
 <script>
 import Fruit from './Fruit.vue'
+import Animals from './Animals.vue'
     export default {
       data() {
         return {
@@ -30,7 +32,8 @@ import Fruit from './Fruit.vue'
         }
       },
       components: {
-        Fruit
+        Fruit,
+        Animals
       }
     }
 </script>
