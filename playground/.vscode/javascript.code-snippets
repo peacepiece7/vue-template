@@ -1,0 +1,7 @@
+{
+  "Vue Template": {
+    "prefix": "sfc",
+    "body": "<template>\n<div>$TM_FILENAME_BASE</div></template>\n\n<script>\nexport default {}\n</script>\n\n<style scoped>\n</style>",
+    "scope": "vue"
+  }
+}
