@@ -21,19 +21,26 @@
     <div>boolean</div>
     <button :disabled="isLoading">
       <!-- ! 표현 식만 가능 즉 return 식별자 뒤에 올 수 있는 표현만 가능 -->
-      {{ isLoading ? "로딩 중" : "제출 하기" }}
+      {{ isLoading ? '로딩 중' : '제출 하기' }}
     </button>
   </section>
   <section>
     <time
       :title="timeTitle"
-      :datetime="currentDate">{{ toTitleDate(currentDate) }}</time>
+      :datetime="currentDate">{{
+        toTitleDate(currentDate)
+      }}</time>
   </section>
   <section>
     <!-- v-if 디렉티브 -->
     <div>v-if 디렉티브</div>
     <!-- v-on은 @로 줄여서 표기할 수 있는데 이는 다음에 다룹니다. 마술이라고 칩시다! -->
-    <button @click="() => {this.isSee = true}">
+    <button
+      @click="
+        () => {
+          this.isSee = true
+        }
+      ">
       클릭 시 아래 문자가 보입니다.
     </button>
     <div v-if="isSee">
@@ -72,33 +79,32 @@
   </section>
 </template>
 
-
 <script>
 export default {
   data() {
-   return {
-    rawHtml : '<span style="color:red">This should be red.</span>',
-    foo : "foo",
-    isLoading : true,
-    timeTitle : "현제 시간을 표시합니다.",
-    currentDate : new Date(),
-    toTitleDate : (date) => {
-      return date.toLocaleString('ko-KR')
-    },
-    isSee : false,
-    dynamicHref : 'href',
-    dynamicUrl : 'http://localh-oost:8080',
-    dynamicClick : 'click',
-    handler : () => {
-      alert('클릭했습니다.')
+    return {
+      rawHtml: '<span style="color:red">This should be red.</span>',
+      foo: 'foo',
+      isLoading: true,
+      timeTitle: '현제 시간을 표시합니다.',
+      currentDate: new Date(),
+      toTitleDate: (date) => {
+        return date.toLocaleString('ko-KR')
+      },
+      isSee: false,
+      dynamicHref: 'href',
+      dynamicUrl: 'http://localh-oost:8080',
+      dynamicClick: 'click',
+      handler: () => {
+        alert('클릭했습니다.')
+      },
     }
-  }
-}
+  },
 }
 </script>
 
 <style scoped>
 section {
-  margin : 40px
+  margin: 40px;
 }
 </style>

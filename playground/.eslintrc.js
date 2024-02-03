@@ -13,7 +13,8 @@ module.exports = {
   ],
   // 구문 분석할 패키지 설정(Babel, ES6^ => ES5)
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    // "parser": "vue-eslint-parser"
   },
   // 추가적인 코드 규칙을 설정
   rules: {
@@ -28,7 +29,8 @@ module.exports = {
     }],
     'vue/html-closing-bracket-newline': ['error', {
       singleline: 'never',
-      multiline: 'never'
-    }]
+      multiline: 'never',
+    }],
+    'no-unused-vars': 'warn',
   }
 }
