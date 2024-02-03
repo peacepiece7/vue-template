@@ -48,4 +48,7 @@ const fullName = computed({
 </script>
 
 <style scoped>
+section {
+  margin: 40px;
+}
 </style>

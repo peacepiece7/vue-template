@@ -47,4 +47,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+section {
+  margin: 40px;
+}
+</style>

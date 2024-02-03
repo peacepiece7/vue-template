@@ -8,20 +8,28 @@
     <div id="count">
       {{ state.count }}
     </div>
-    <button @click="increment">Increment</button>
+    <button @click="increment">
+      Increment
+    </button>
   </section>
   <section>
     <div>
       <h2>깊은 반응형 deep arr</h2>
       <ul>
-        <li v-for="(item, idx) of state.deepArr" :key="item.id">
+        <li
+          v-for="(item, idx) of state.deepArr"
+          :key="item.id">
           {{ idx + item.name }}
         </li>
       </ul>
       <li>{{ state.deepArr.length }}</li>
     </div>
-    <button @click="addDeepArr">Add deepArr</button>
-    <button @click="editArr">Edit Some Arr</button>
+    <button @click="addDeepArr">
+      Add deepArr
+    </button>
+    <button @click="editArr">
+      Edit Some Arr
+    </button>
   </section>
 </template>
 
@@ -96,4 +104,8 @@ function editArr() {
  */
 </script>
 
-<style scoped></style>
+<style scoped>
+section {
+  margin: 40px;
+}
+</style>
