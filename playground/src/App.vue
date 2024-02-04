@@ -10,6 +10,7 @@
   <A10_watcher_egaer_composition />
   <A11_reference_composition />
   <A12_component_composition />
+  <B3_event_component />
 </template>
 
 <script>
@@ -24,6 +25,7 @@ import A10_watcher_composition from './components/A10_watcher_basic_composition.
 import A11_reference_composition from './components/A11_reference_composition.vue'
 import A10_watcher_egaer_composition from './components/A10_watcher_egaer_composition.vue'
 import A12_component_composition from './components/A12_component_composition.vue'
+import B3_event_component from './components/B3_event_component.vue'
 
 export default {
   components: {
@@ -38,6 +40,7 @@ export default {
     A10_watcher_egaer_composition,
     A11_reference_composition,
     A12_component_composition,
+    B3_event_component,
   },
 }
 </script>

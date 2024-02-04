@@ -14,11 +14,12 @@
 <script setup>
 import Button from './Button.vue'
 import Title from './Title.vue'
+
 import { ref } from 'vue'
 const title = ref('hello, world')
 
-function handleClick() {
-  console.log('Parent : Button clicked')
+function handleClick(e) {
+  console.log('Parent : Button clicked', e)
 }
 </script>
 
