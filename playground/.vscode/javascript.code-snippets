@@ -1,7 +1,12 @@
 {
-  "Vue Template": {
-    "prefix": "sfc",
-    "body": "<template>\n<div>$TM_FILENAME_BASE</div></template>\n\n<script>\nexport default {}\n</script>\n\n<style scoped>\n</style>",
+  "Vue Composition API Template": {
+    "prefix": "vct",
+    "body": "<template>\n  <div>$TM_FILENAME_BASE</div>\n</template>\n\n<script setup>\n\n</script>\n\n<style scoped>\n  section { margin: 40px; }\n</style>",
+    "scope": "vue"
+  },
+  "Vue Option API Template": {
+    "prefix": "vot",
+    "body": "<template>\n  <div>$TM_FILENAME_BASE</div>\n</template>\n\n<script>\nexport default {}\n</script>\n\n<style scoped>\n  section { margin: 40px; }\n</style>",
     "scope": "vue"
   }
 }
