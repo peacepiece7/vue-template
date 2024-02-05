@@ -11,6 +11,7 @@
   <A11_reference_composition />
   <A12_component_composition />
   <B3_event_component />
+  <B3_slot_component />
 </template>
 
 <script>
@@ -26,6 +27,7 @@ import A11_reference_composition from './components/A11_reference_composition.vu
 import A10_watcher_egaer_composition from './components/A10_watcher_egaer_composition.vue'
 import A12_component_composition from './components/A12_component_composition.vue'
 import B3_event_component from './components/B3_event_component.vue'
+import B3_slot_component from './components/B3_slot_component.vue'
 
 export default {
   components: {
@@ -41,6 +43,7 @@ export default {
     A11_reference_composition,
     A12_component_composition,
     B3_event_component,
+    B3_slot_component,
   },
 }
 </script>
