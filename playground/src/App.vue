@@ -12,6 +12,8 @@
   <A12_component_composition />
   <B3_event_component />
   <B3_slot_component />
+  <B3_provide_injection_component />
+  <B3_async_conponent />
 </template>
 
 <script>
@@ -28,6 +30,8 @@ import A10_watcher_egaer_composition from './components/A10_watcher_egaer_compos
 import A12_component_composition from './components/A12_component_composition.vue'
 import B3_event_component from './components/B3_event_component.vue'
 import B3_slot_component from './components/B3_slot_component.vue'
+import B3_provide_injection_component from './components/B3_provide_injection_component.vue'
+import B3_async_conponent from './components/B3_async_conponent.vue'
 
 export default {
   components: {
@@ -44,6 +48,9 @@ export default {
     A12_component_composition,
     B3_event_component,
     B3_slot_component,
+    B3_provide_injection_component,
+    B3_async_conponent
+
   },
 }
 </script>
