@@ -1,0 +1,32 @@
+{
+  "Vue Composition API Template": {
+    "prefix": "vct",
+    "body": "<template>\n  <div>$TM_FILENAME_BASE</div>\n</template>\n\n<script setup>\n\n</script>\n\n<style scoped>\n  section { margin: 40px; }\n</style>",
+    "scope": "vue"
+  },
+  "Vue Option API Template": {
+    "prefix": "vot",
+    "body": "<template>\n  <div>$TM_FILENAME_BASE</div>\n</template>\n\n<script>\nexport default {}\n</script>\n\n<style scoped>\n  section { margin: 40px; }\n</style>",
+    "scope": "vue"
+  },
+  // Place your snippets for vue here. Each snippet is defined under a snippet name and has a prefix, body and 
+// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+// same ids are connected.
+// Example:
+// "Print to console": {
+// "prefix": "log",
+// "body": [
+// "console.log('$1');",
+// "$2"
+// ],
+// "description": "Log output to console"
+// }
+"Generate Basic Vue Code":{
+  "prefix":"vue-start",
+  "body": [
+  "<script setup lang=\"ts\">\n\n</script>\n\n<template>\n\n</template>\n\n<style scoped lang=\"scss\">\n\n</style>"
+  ],
+  "description": "Generate Basic Vue Code"
+  }
+}
