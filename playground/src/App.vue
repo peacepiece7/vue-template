@@ -14,6 +14,7 @@
   <B3_slot_component />
   <B3_provide_injection_component />
   <B3_async_conponent />
+  <B3_custom_directive_test_component />
 </template>
 
 <script>
@@ -32,6 +33,7 @@ import B3_event_component from './components/B3_event_component.vue'
 import B3_slot_component from './components/B3_slot_component.vue'
 import B3_provide_injection_component from './components/B3_provide_injection_component.vue'
 import B3_async_conponent from './components/B3_async_conponent.vue'
+import B3_custom_directive_test_component from './components/B3_custom_directive_test_component.vue'
 
 export default {
   components: {
@@ -49,7 +51,8 @@ export default {
     B3_event_component,
     B3_slot_component,
     B3_provide_injection_component,
-    B3_async_conponent
+    B3_async_conponent,
+    B3_custom_directive_test_component
 
   },
 }
