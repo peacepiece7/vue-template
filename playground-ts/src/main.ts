@@ -7,4 +7,5 @@ import { api } from "./api"
 const app = createApp(App)
 
 app.config.globalProperties.$http = api
+app.config.globalProperties.$router = router
 app.use(router).mount("#app")
